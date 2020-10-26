@@ -26,12 +26,12 @@ public class UserController {
 	}
 
 	@GetMapping("/findAllUsers")
-	public List<User> getBooks() {
+	public List<User> getUsers() {
 		return repository.findAll();
 	}
 
 	@GetMapping("/findAllUsers/{id}")
-	public Optional<User> getBook(@PathVariable int id) {
+	public Optional<User> getUser(@PathVariable int id) {
 		return repository.findById(id);
 	}
 
